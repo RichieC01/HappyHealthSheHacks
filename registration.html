@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<link rel ="stylesheet" href="style.css">
+		<link rel ="stylesheet" href="registrationStyle.css">
 		<link href="bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body id = "all">
 
 	<!--Navigation Bar-->
-	<nav class="navbar navbar-inverse navbar-static-top navbar-default">
-		<div class="container-fluid">
+	<nav class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">
-        	<img alt="Brand" id="logo" src="logo.png" height=100px>
-      	</a>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
@@ -40,34 +37,25 @@
 	</nav>
 
 	<div id = "content">
-	  <h4 id="regPrompt">Please enter your information in the fields below, then click "Submit" to register.</h4>
+	  <p>Please enter your information in the fields below, then click "Submit" to register.</p>
 
 	  <form id="frm1">
-	    <span class="field">First name: </span><input class="box" type="text" name="fname"><br>
-	    <span class="field">Last name: </span><input class="box" type="text" name="lname"><br>
-	    <span class="field">Allergies: </span><input class="box" type="text" name="aller"><br><br>
-	    <!-- <input type="button" onclick="myFunction()" value="Submit"> -->
+	    First name: <input type="text" name="fname"><br>
+	    Last name: <input type="text" name="lname"><br>
+	    Allergies:   <input type="text" name="aller"><br><br>
+	    <input type="button" onclick="myFunction()" value="Submit">
 	  </form>
 
-		<nav aria-label="...">
-			<ul class="pager">
-				<li><a onclick="myFunction()" value="Submit">Submit</a></li>
-			</ul>
-		</nav>
 
 	  <p id="demo"></p>
 
 	  <script>
 		  function myFunction() {
-
 		    var info = document.getElementById("frm1");
 		    localStorage.setItem("fname", info.elements[0].value);
 		    localStorage.setItem("lname", info.elements[1].value);
 		    localStorage.setItem("aller", info.elements[2].value);
-
-
 		    document.getElementById("frm1").submit();
-
 		  }
 		</script>
 	</div>
