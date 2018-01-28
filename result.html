@@ -10,7 +10,7 @@
 }
 </style>
 
-<body id = "all">
+<body onload="inputRecs()" id = "all">
 	<!--Navigation Bar-->
 	<nav class="navbar navbar-inverse navbar-static-top">
 		<div class="container">
@@ -41,26 +41,14 @@
 		</div>
 	</nav>
 
-  <div class="heading">
-		<h1 class="txt anim-text-flow">Tell Us How You Are</h1>
-	</div>
+
+	<h1 id="sugg1">Sugg 1</h1>
+	<h1 id="sugg2">Sugg 2</h1>
+	<h1 id="sugg3">Sugg 3</h1>
+
+	<h1 id="other"></h1>
 
 
-<div class = "q" id = "mood">
-  <p class = "category">How are you feeling?</p>
-  <a onclick = "addScore(this, 4)" class="btn btn-1">Good</a><br>
-  <a onclick = "addScore(this, 3)" class="btn btn-1">Better than okay</a><br>
-  <a onclick = "addScore(this, 2)" class="btn btn-1">Okay</a><br>
-  <a onclick = "addScore(this, 1)" class="btn btn-1">Could be better</a><br>
-  <a onclick = "addScore(this, 0)" class="btn btn-1">Not so good</a><br>
-</div>
-
-<nav aria-label="...">
-  <ul class="pager">
-    <li><a href="index2.html">Next</a></li>
-  </ul>
-</nav>
-
-<script type="text/javascript" src = "happyhealth.js"></script>
+	<script type="text/javascript" src = "happyhealth.js"></script>
 </body>
 </html>
