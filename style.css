@@ -43,6 +43,7 @@
 }
 .btn-1 {
 	background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+	margin: 25px;
 }
 
 .q {
@@ -51,12 +52,66 @@
 }
 
 #logo img {
-	  height = 130px;
-		margin-top = -60px;
+
+}
+
+.txt {
+	font-style: italic;
+	font-family: serif;
+	padding-bottom: 30px;
+	color: #7f6c54;
 }
 
 .category {
+	color: dark;
+	font-family: serif;
+	font-size: 30px;
+}
+
+h1 {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.suggestions{
 	color: #7f6c54;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 30px;
+	font-style: italic;
+	margin-top: 70px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: -40px;
+
+}
+
+.descrip{
+	font-style: normal;
+	line-height: 1.5;
+}
+
+#regPrompt{
+	text-align: center;
+	color: #7f6c54;
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+}
+
+.field {
+	width: 12em;
+	color: #7f6c54;
+	font-family: 'Montserrat', sans-serif;
+}
+
+input{
+	border: 1px solid gray;
+	width: 12em;
+}
+
+.box{
+	flex: 1 1 auto;
+	margin: 30px;
+}
+
+#frm1{
+	text-align: center;
 }
